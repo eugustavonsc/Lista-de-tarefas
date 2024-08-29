@@ -11,17 +11,17 @@ function adcTarefa(){
         checkbox.type = "checkbox";
         novaTarefa.appendChild(checkbox);
         checkbox.addEventListener("change", function() { // Adiciona um evento ao checkbox
-            if (checkbox.checked) {
-                novaTarefa.style.textDecoration = "line-through"; // Risca a tarefa quando o checkbox é marcado
-            } else {
-                novaTarefa.style.textDecoration = "none"; // Remove o risco quando o checkbox é desmarcado
-            }
-        });
+             if (checkbox.checked) {
+                     novaTarefa.style.textDecoration = "line-through"; // Risca a tarefa quando o checkbox é marcado
+                 } else {
+                         novaTarefa.style.textDecoration = "none"; // Remove o risco quando o checkbox é desmarcado
+                     }
+                 });
         const texto = document.createTextNode(textoTarefa);
         novaTarefa.appendChild(texto);         
         listaTarefas.appendChild(novaTarefa);           //acrescentar tarefa no elemento pai
         tarefa.value= ""                                //limpar o campo de entrada <input>
-    }   
+    }
     
     
     
